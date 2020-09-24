@@ -28,31 +28,6 @@ def parity_check(bits):
     False
     """
     
-def is_power_2(num):
-    """ Returns true if a number is a power of 2
-
-    >>> is_power_2(1)
-    True
-
-    >>> is_power_2(2)
-    True
-
-    >>> is_power_2(3)
-    False
-
-    >>> is_power_2(4)
-    True
-
-    >>> is_power_2(15)
-    False
-
-    >>> is_power_2(16)
-    True
-
-    >>> is_power_2(17)
-    False
-    """
-
 def get_error_position(hamming_code):
     """
     Returns 1-based position of an error in the supplied Hamming code
