@@ -3,8 +3,9 @@ Accepts a string of hamming-encoded data and returns the data portion with any 1
 errors corrected.
 """
 
+
 def parity_check(bits):
-    """ Returns true if `bits` has even parity
+    """Returns true if `bits` has even parity
 
     >>> parity_check('')
     True
@@ -27,7 +28,8 @@ def parity_check(bits):
     >>> parity_check('1010101010')
     False
     """
-    
+
+
 def get_error_position(hamming_code):
     """
     Returns 1-based position of an error in the supplied Hamming code
@@ -35,24 +37,24 @@ def get_error_position(hamming_code):
     Returns None if no error
 
     >>> get_error_position('111')
-    
+
     >>> get_error_position('000')
 
     >>> get_error_position('110')
     3
-    
+
     >>> get_error_position('100')
     1
-    
+
     >>> get_error_position('1111111')
-    
+
     >>> get_error_position('1110111')
     4
-    
+
     >>> get_error_position('1111010')
     2
     """
-    
+
 
 def hamming_decode(bits):
     """
@@ -62,7 +64,7 @@ def hamming_decode(bits):
 
     >>> hamming_decode('111')
     '1'
-    
+
     >>> hamming_decode('000')
     '0'
 
@@ -77,28 +79,28 @@ def hamming_decode(bits):
 
     >>> hamming_decode('1111111')
     '1111'
-    
+
     >>> hamming_decode('1110111')
     '1111'
-    
+
     >>> hamming_decode('0111111')
     '1111'
-    
+
     >>> hamming_decode('1111110')
     '1111'
-    
+
     >>> hamming_decode('1011010')
     '1010'
-    
+
     >>> hamming_decode('1111010')
     '1010'
-    
+
     >>> hamming_decode('1001010')
     '1010'
 
     For 2 points of extra credit, you may also create a general implementation that
     allows the following tests to pass:
-    
+
     >>> hamming_decode('011001001110001')
     '10101110001'
 
@@ -107,7 +109,7 @@ def hamming_decode(bits):
 
     >>> hamming_decode('001011111100111')
     '11111100111'
-    
+
     >>> hamming_decode('001011111100110')
     '11111100111'
 
@@ -120,8 +122,9 @@ def hamming_decode(bits):
     >>> hamming_decode('1111111101111111111111111111111')
     '11111111111111111111111111'
     """
-    
-if __name__ == '__main__':
+
+
+if __name__ == "__main__":
     import sys
 
     print(hamming_decode(sys.argv[1]))
