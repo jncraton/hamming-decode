@@ -3,8 +3,10 @@ Accepts a string of hamming-encoded data and returns the data portion with any 1
 errors corrected.
 """
 
+from typing import Optional
 
-def parity_check(bits):
+
+def parity_check(bits: str) -> bool:
     """Returns true if `bits` has even parity
 
     >>> parity_check('')
@@ -30,7 +32,7 @@ def parity_check(bits):
     """
 
 
-def get_error_position(hamming_code):
+def get_error_position(hamming_code: str) -> Optional[int]:
     """
     Returns 1-based position of an error in the supplied Hamming code
 
@@ -56,7 +58,7 @@ def get_error_position(hamming_code):
     """
 
 
-def hamming_decode(bits):
+def hamming_decode(bits: str) -> str:
     """
     Returns data portion of Hamming-coded bit string
 
