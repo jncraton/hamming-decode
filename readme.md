@@ -9,16 +9,16 @@ Tests may be run by invoking either `make test` or `python3 -m doctest hamming.p
 
 Once complete, the decoder can extract data from Hamming codes including 0 or 1 bit errors as follows:
 
-```bash
-python3 hamming.py 111
+```sh
+> python3 hamming.py 111
 1
 
-python3 hamming.py 110
+> python3 hamming.py 110
 1
 
-python3 hamming.py 1111111
+> python3 hamming.py 1111111
 1111
 
-python3 hamming.py 1111011
+> python3 hamming.py 1111011
 1111
 ```
