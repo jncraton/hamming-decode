@@ -1,4 +1,4 @@
-""" 
+"""
 Accepts a string of hamming-encoded data and returns the data portion with any 1 bit
 errors corrected.
 """
@@ -33,8 +33,7 @@ def parity_check(bits: str) -> bool:
 
 
 def get_error_position(hamming_code: str) -> Optional[int]:
-    """
-    Returns 1-based position of an error in the supplied Hamming code
+    """Returns 1-based position of an error in the supplied Hamming code
 
     Returns None if no error
 
@@ -59,8 +58,7 @@ def get_error_position(hamming_code: str) -> Optional[int]:
 
 
 def hamming_decode(bits: str) -> str:
-    """
-    Returns data portion of Hamming-coded bit string
+    """Returns data portion of Hamming-coded bit string
 
     This function should support Hamming (3,1) and Hamming (7,4)
 
@@ -101,7 +99,7 @@ def hamming_decode(bits: str) -> str:
     '1010'
 
     For 2 points of extra credit, you may also create a general implementation that
-    allows the following tests to pass:
+    allows the following tests to pass. Otherwise, you may delete these tests.
 
     >>> hamming_decode('011001001110001')
     '10101110001'
