@@ -60,6 +60,8 @@ def get_error_position(hamming_code: str) -> Optional[int]:
 def hamming_decode(bits: str) -> str:
     """Returns data portion of Hamming-coded bit string
 
+    Any single-bit errors should be corrected.
+
     This function should support Hamming (3,1) and Hamming (7,4)
 
     >>> hamming_decode('111')
